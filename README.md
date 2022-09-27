@@ -13,3 +13,7 @@ Bilder: Bröllop / Natur / Sport osv.
 Bokning & Priser: Bakgrundsbild, lista av priser.
 
 Om Mig: Information om erfarenhet, utbildning och hur länge de har hållit på med fotografi. 
+
+Att göra 28/09: 
+1. Dela upp arbete, Bestämm vem som gör vilken sida.
+2. Individuellt skapa en mockup av din tilldelade sida.
