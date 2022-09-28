@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{
+    border: 10px solid black;
+}
+
 #priserbody{
     background-image: url(../img/photographer-website-design-91250317.jpg);
 }
