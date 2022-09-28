@@ -2,11 +2,9 @@
 Verksamhetsidé:
 Portfoliosida av fotograf.
 
-Färger: Vitt, Beiget, Svart.
+Färger: Vitt, Beiget, Svart, Guld, Rosegold.
 
-Header / Nav bar: Hyperlänkar.
-
-Startsida: Bredbild banner med namnet av personen.
+Startsida: Bredbild, recensioner av tjänsten med stjärnor och "" täcken. 
 
 Bilder: Bröllop / Natur / Sport osv.
 
