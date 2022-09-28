@@ -2,7 +2,7 @@
 Verksamhetsidé:
 Portfoliosida av fotograf.
 
-Färger: Vitt, Beiget, Svart, Guld, Rosegold.
+Färger: Vitt, Beiget, Svart, (Guld, Rosegold).
 
 Startsida: Bredbild, recensioner av tjänsten med stjärnor och "" täcken. 
 
