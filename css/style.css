@@ -1,4 +1,8 @@
 /* Milos grejer */
+*{
+    margin: 0;
+    padding: 0;
+}
 
 #priserbody{
     background-image: url(../img/photographer-website-design-91250317.jpg);
