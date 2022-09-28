@@ -1,7 +1,8 @@
 /* Milos grejer */
 
 #priserbody{
-    background-image: url(../img/photographer-website-design-91250317.jpg);
+    background-image: url(../img/baltic-sea-7168094_1920.jpg);
+    background-position-y: 30%;
 }
 
 /*#bannercontainer{
@@ -20,31 +21,32 @@
 }
 .prish1{
     text-align: center;
-    color: bisque;
+    color: rgb(0, 0, 0);
 }
 #gridcontainerpriser{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     column-gap: 2%;
     min-height: 500px;
-
-    border: 1px solid black;
-    
 }
 #package1, 
 #package2,
 #package3{
-    border: 1px solid #333;
-    background-color:blanchedalmond;
+    background-color:rgb(103, 25, 25);
+    border: 2px solid black;
+    border-radius: 3%;
 }
 #package1{
     grid-column: 2 / 5;
 }
 #package2{
-    grid-column: 5 / 9;
+    grid-column: 6 / 9;
 }
 #package3{
-    grid-column: 9 / 12;
+    grid-column: 10 / 13;
+}
+.priserlista{
+    color: azure;
 }
 
 /*Freddes grejer */
