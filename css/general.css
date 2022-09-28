@@ -1,3 +1,6 @@
 :root {
-    --main-bg-color: rgb(97, 28, 28);
+    --main-bg-color: rgb(97, 92, 28);
+}
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
