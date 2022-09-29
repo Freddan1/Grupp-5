@@ -6,78 +6,25 @@
 
 body{
     border: 10px solid black;
+    min-height: 100vh;
 }
 
 #priserbody{
     background-image: url(../img/download.jpg);
-    background-position-y: 30%;
 }
 
-/*#bannercontainer{
-    width: 100%;
-    height: 120px;
-    background-image: url(../img/gvQ9NhQP8wbbM32jXy4V3j.jpg);
-    margin-top: 15px;
-    background-position-y: 24%;
-    background-position-x: 20%;
-} */
-.headerpriser{
-    width: 100%;
-    height: 70px;
-    border: 1px solid black;
-    background-color: grey;
-}
-.prish1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align:center;
-    color: rgb(0, 0, 0);
-}
-#gridcontainerpriser{
-    display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    column-gap: 2%;
-    min-height: 500px;
-}
-#package1, 
-#package2,
-#package3{
-    box-shadow: 1px 1px 20px;
-    background-color:rgb(255, 255, 255);
-    border: 2px solid black;
 
-}
-#package1{
-    grid-column: 2 / 5;
-}
-#package2{
-    grid-column: 6 / 9;
-}
-#package3{
-    grid-column: 10 / 13;
-}
-.priserlista{
-    color: rgb(0, 0, 0);
-    margin-top: 10%;
-}
-#prislista1,#prislista2,#prislista3{
-    display: inline-block;
-    margin-left: 12.5%;    
-}
-#prislista2{
-    margin-left: 21%;
-}
-#prislista3{
-    margin-left: 20%;
-}
+
 
 /*Freddes grejer */
 
 
 
-.container{
+.index-container{
     min-height: 100vh;
     background-image: url(../img/trains-gb0318122a_1920.jpg);
 }
+
 
 nav {
     display: flex; 
