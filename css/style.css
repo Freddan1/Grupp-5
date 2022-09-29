@@ -110,12 +110,15 @@ nav {
 }
 
 .maincontainer2{
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     background-color: rgb(255, 255, 255);
     border-top: 5px solid rgb(99, 99, 66);
     padding-top: 50px;
+    padding: 20px;
+    gap: 10px;
 }
 
 .headline{
@@ -124,8 +127,16 @@ nav {
     padding: 100px;
 }
 
-.mainbox1{
+.mainbox1,
+.mainbox2,
+.mainbox3{
     border: 1px solid black;
     min-height: 200px;
+    padding: 10px; 
 }
 
+.mainbox1 > img{
+    border-radius: 5px;
+    width: 200px;
+    height: 150px;
+}
