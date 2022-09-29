@@ -1,6 +1,9 @@
 :root {
-    --main-bg-color: rgb(97, 92, 28);
+    --main-accent-color: #e9bc27;
 }
 *{
     font-family: "Quicksand";
+}
+body{
+    border: 10px solid black;
 }
