@@ -4,20 +4,97 @@
     padding: 0;
 }
 
-body{
-    border: 10px solid black;
-    min-height: 100vh;
-}
 
 #priserbody{
     background-image: url(../img/download.jpg);
+    margin: 0%;
+    
+}
+.pris-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+    min-height: 100vh;
+   
+}
+.priskolumn{
+    background-color: rgb(177, 177, 177);
+    box-shadow: 0 5px 30px rgba(3, 3, 3, 0.2);
+    padding: 3%;
+
+    flex-grow: 1;       /*så att de växer, max width så att de inte växer för mycket */
+    max-width: 250px;
+ 
+}
+.priskolumn.populär{        /*få mitten boxen att poppa ut mer, dra ögat till den */
+    background-color: var(--main-accent-color);
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+}
+.pris-header{       /*för att enkelt centrera texten i toppen av boxen */
+    display: flex;          
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.pris{
+    font-size: 3rem;
+    display: flex; /*för att få SEK, prissiffran och /h på en rad */
+}
+.sek, .pertimme{
+    font-size: 1rem;    /*minska både SEK och /h */
+}
+.sek{
+    margin-right: 6px; /*så den inte är för trångt bredvid priset */
+}
+.pertimme{
+    margin-top: 33px; /*få /h under priset */
+}
+.package-namn{
+    padding-top: 20px;
+}
+.divider{       /*horisontell linje för att separera headern och innehållet */
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 2rem 0;
+}
+.pris-ikoner{
+    max-width: 18px;
+    margin-right: 0.8em;
+}
+.feature{
+    font-size: 1.25rem;
+    margin-top: 22px;
+}
+.feature.inaktiv{
+    color: rgb(117, 117, 117);
+    text-decoration-line: line-through;
+}
+.package-knapp{
+    border: none;
+    background-color: var(--main-accent-color);
+    width: 100%;
+    padding: 5%;
+    cursor: pointer; /*Så att knappen ser mer klickbar ut när man hoverar över den */
+    margin-top: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: large;
+    transition: 200ms; /*När knappen poppar ut gör den det lite saktare */
+}
+.package-knapp.populär{
+    background-color: rgb(0, 0, 0) ;
+    color: var(--main-accent-color);
+}
+.package-knapp:hover, .package-knapp:focus{
+    transform: scale(1.1); /*Knappen förstoras med 10% när man hoverar över den, alltså poppar ut */
 }
 
-
-
-
-/*Freddes grejer */
-
+/* Fredrik */
 
 
 .index-container{
