@@ -88,7 +88,7 @@
 }
 .package-knapp.populär{
     background-color: rgb(0, 0, 0) ;
-    color: white;
+    color: var(--main-accent-color);
 }
 .package-knapp:hover, .package-knapp:focus{
     transform: scale(1.1); /*Knappen förstoras med 10% när man hoverar över den, alltså poppar ut */
