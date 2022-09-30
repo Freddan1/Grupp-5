@@ -99,7 +99,9 @@
 
 .index-container{
     min-height: 100vh;
-    background-image: url(../img/trains-gb0318122a_1920.jpg);
+    background-image: url(../img/people-gdcafd7d4b_1920.jpg);
+    background-position: center;
+
 }
 
 .text-box{
@@ -146,6 +148,7 @@ nav {
 }
 
 .maincontainer2{
+    margin: 0 auto;
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -182,6 +185,7 @@ i.quote{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    flex: 1 1 110px;
 }
 
 .name{
@@ -218,18 +222,6 @@ i.quote{
     grid-column: 3 / 3;
 }
 
-.mainbox1 > img{
-    border-radius: 5px;
-    width: 200px;
-    height: 150px;
-}
-
-.mainbox2 > img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
-
 @media screen and (max-width: 767px) {
     .mainbox1{
         grid-column: 1 / 3;
@@ -240,4 +232,14 @@ i.quote{
     .mainbox3{
         grid-column: 1 / 3;
     }
+}
+
+@media screen and (max-width: 390px) {
+    nav {
+        padding: 2px; 
+    }
+    .nav-links{
+        text-align: center;
+    }
+    
 }
