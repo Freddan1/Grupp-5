@@ -98,9 +98,11 @@
 
 
 .index-container{
+    width: 100%;
     min-height: 100vh;
-    background-image: url(../img/people-gdcafd7d4b_1920.jpg);
+    background-image: url(../img/Kopia\ av\ high\ rises.JPG);
     background-position: center;
+    background-size: cover;
 
 }
 
@@ -110,11 +112,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,50%);
     text-align: center;
     font-size: 36px;
-    background-color: black;
-    opacity: 0.7;
 }
 
 nav {
@@ -152,7 +152,6 @@ nav {
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     background-color: rgb(255, 255, 255);
     padding-top: 50px;
     padding: 20px;
@@ -185,7 +184,7 @@ i.quote{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    flex: 1 1 110px;
+    flex: 15 0 110px;
 }
 
 .name{
@@ -232,6 +231,9 @@ i.quote{
     .mainbox3{
         grid-column: 1 / 3;
     }
+    .mainbox1 {
+         padding: 5px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -241,5 +243,4 @@ i.quote{
     .nav-links{
         text-align: center;
     }
-    
 }
