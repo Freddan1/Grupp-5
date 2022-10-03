@@ -178,7 +178,7 @@ i.quote{
     color: var(--main-accent-color);
 }
 
-.content{
+.indexcontent{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
