@@ -1,13 +1,246 @@
-img{
-    width: 100%;
-    height: 100vh;
+/* Milos grejer */
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.container{
+
+#priserbody{
+    background-image: url(../img/download.jpg);
+    margin: 0%;
+    
+}
+.pris-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
     min-height: 100vh;
-    background-image: url(../img/trains-gb0318122a_1920.jpg);
+   
+}
+.priskolumn{
+    background-color: rgb(177, 177, 177);
+    box-shadow: 0 5px 30px rgba(3, 3, 3, 0.2);
+    padding: 3%;
+
+    flex-grow: 1;       /*så att de växer, max width så att de inte växer för mycket */
+    max-width: 250px;
+ 
+}
+.priskolumn.populär{        /*få mitten boxen att poppa ut mer, dra ögat till den */
+    background-color: var(--main-accent-color);
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+}
+.pris-header{       /*för att enkelt centrera texten i toppen av boxen */
+    display: flex;          
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+.pris{
+    font-size: 3rem;
+    display: flex; /*för att få SEK, prissiffran och /h på en rad */
+}
+.sek, .pertimme{
+    font-size: 1rem;    /*minska både SEK och /h */
+}
+.sek{
+    margin-right: 6px; /*så den inte är för trångt bredvid priset */
+}
+.pertimme{
+    margin-top: 33px; /*få /h under priset */
+}
+.package-namn{
+    padding-top: 20px;
+}
+.divider{       /*horisontell linje för att separera headern och innehållet */
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 2rem 0;
+}
+.pris-ikoner{
+    max-width: 18px;
+    margin-right: 0.8em;
+}
+.feature{
+    font-size: 1.25rem;
+    margin-top: 22px;
+}
+.feature.inaktiv{
+    color: rgb(117, 117, 117);
+    text-decoration-line: line-through;
+}
+.package-knapp{
+    border: none;
+    background-color: var(--main-accent-color);
+    width: 100%;
+    padding: 5%;
+    cursor: pointer; /*Så att knappen ser mer klickbar ut när man hoverar över den */
+    margin-top: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: large;
+    transition: 200ms; /*När knappen poppar ut gör den det lite saktare */
+}
+.package-knapp.populär{
+    background-color: rgb(0, 0, 0) ;
+    color: var(--main-accent-color);
+}
+.package-knapp:hover, .package-knapp:focus{
+    transform: scale(1.1); /*Knappen förstoras med 10% när man hoverar över den, alltså poppar ut */
 }
 
-.header{
-    background-color: rgb(255, 244, 91);
+/* Fredrik */
+
+
+.index-container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/Kopia\ av\ high\ rises.JPG);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text-box{
+    width: 90%;
+    color: var(--main-accent-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    font-size: 36px;
+}
+
+nav {
+    display: flex; 
+    padding: 2% 6%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links > ul > li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    border: 1px solid white;
+}
+
+.nav-links > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+.nav-links > ul > li:hover{
+    background: var(--main-accent-color);
+    transition: 1s;
+}
+
+.maincontainer2{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.headline{
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.mainbox1,
+.mainbox2,
+.mainbox3{
+    min-height: 200px;
+    padding: 25px; 
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+i.quote{
+    font-size: 20px;
+    color: var(--main-accent-color);
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex: 15 0 110px;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.kund{
+    color: var(--main-accent-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.stars{
+    margin-top: 5px;
+    color: var(--main-accent-color);
+}
+
+.mainimage img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.mainbox1{
+    grid-column: 1 / 1;
+}
+
+.mainbox2{
+    grid-column: 2 / 2;
+}
+
+.mainbox3{
+    grid-column: 3 / 3;
+}
+
+@media screen and (max-width: 767px) {
+    .mainbox1{
+        grid-column: 1 / 3;
+    }
+    .mainbox2{
+        grid-column: 1 / 3;
+    }
+    .mainbox3{
+        grid-column: 1 / 3;
+    }
+    .mainbox1 {
+         padding: 5px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    nav {
+        padding: 2px; 
+    }
+    .nav-links{
+        text-align: center;
+    }
 }
