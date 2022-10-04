@@ -253,6 +253,12 @@ i.quote {
     grid-column: 3 / 3;
 }
 
+@media screen and (max-width: 811px){
+    .text-box{
+    transform: translate(-50%, -50%);
+    }
+}
+
 @media screen and (max-width: 767px) {
     .mainbox1 {
         grid-column: 1 / 4;
@@ -268,11 +274,6 @@ i.quote {
 
     .mainbox1 {
         padding: 5px;
-    }
-}
-@media screen and (max-width: 584px){
-        .text-box{
-        transform: translate(-50%, -50%);
     }
 }
 
