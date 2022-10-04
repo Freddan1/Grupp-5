@@ -17,8 +17,8 @@
     align-items: center;
     flex-wrap: wrap;
     min-width: 100%;
-    min-height: 100vh;
-
+    min-height: 80vh;
+    
 }
 
 .priskolumn {
@@ -29,7 +29,7 @@
     flex-grow: 1;
     /*så att de växer, max width så att de inte växer för mycket */
     max-width: 250px;
-
+    margin: 0 2%;
 }
 
 .priskolumn.populär {
@@ -122,7 +122,21 @@
     transform: scale(1.1);
     /*Knappen förstoras med 10% när man hoverar över den, alltså poppar ut */
 }
-
+#pris-form-container{
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    min-height: 200px;
+}
+#pris-form{
+    grid-column: 4 /6;
+}
+#pris-h3, #pris-p{
+    grid-column: 2;
+}
+#pris-hr{
+    color: black;
+}
 /* Fredrik */
 
 
