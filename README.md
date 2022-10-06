@@ -16,3 +16,6 @@ Att göra 28/09:
 1. Dela upp arbete, Bestämm vem som gör vilken sida.
 2. Individuellt skapa en mockup av din tilldelade sida.
 3. Skapa mapp för mockups och sätt alla där inne, ladda upp till Github.
+
+prototype contact us: 
+https://www.figma.com/proto/aRjP88Nm5idj9vns12yxl5/Untitled?page-id=0%3A1&node-id=0%3A1&viewport=-780%2C-953%2C1&scaling=scale-down&starting-point-node-id=20%3A29
