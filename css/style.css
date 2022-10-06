@@ -283,8 +283,13 @@ i.quote {
 
 .om-oss {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
+    color: var(--main-accent-color);
+
+
 }
+
+
 
 .om-oss-main {
     display: flex;
@@ -295,18 +300,28 @@ i.quote {
     gap: 5%;
 }
 
+.om-oss-main h2 {
+    color: var(--main-accent-color);
+}
+
 .om-oss-content {
     display: grid;
     grid-template-columns: 0% 25% 25% 0%;
     margin: 20px;
     column-gap: 10%;
     justify-content: center;
+
+}
+
+.om-oss-content h2 {
+    color: var(--main-accent-color);
 }
 
 .om-oss-item1 {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row: 1 / span 1;
+    padding: 20px;
 
 }
 
@@ -316,16 +331,19 @@ i.quote {
     grid-column-start: 3;
     grid-column-end: 3;
     grid-row: 1 / span 1;
+    padding: 20px;
 
 
 }
 
 .om-oss-footer {
     padding: 30px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    font-style: italic;
+    font-style: bold;
     margin: 30px;
+    color: var(--main-accent-color);
+
 
 }
 
