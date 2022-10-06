@@ -1,103 +1,250 @@
 /* Milos grejer */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    border: 10px solid black;
+
+#priserbody {
+    background-image: url(../img/download.jpg);
+    margin: 0%;
+
 }
 
-#priserbody{
-    background-image: url(../img/baltic-sea-7168094_1920.jpg);
-    background-position-y: 30%;
+.pris-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+    min-height: 80vh;
+    
 }
 
-/*#bannercontainer{
-    width: 100%;
-    height: 120px;
-    background-image: url(../img/gvQ9NhQP8wbbM32jXy4V3j.jpg);
-    margin-top: 15px;
-    background-position-y: 24%;
-    background-position-x: 20%;
-} */
-.headerpriser{
-    width: 100%;
-    height: 70px;
-    border: 1px solid black;
-    background-color: grey;
+.priskolumn {
+    background-color: rgb(177, 177, 177);
+    box-shadow: 0 5px 30px rgba(3, 3, 3, 0.2);
+    padding: 3%;
+
+    flex-grow: 1;
+    /*så att de växer, max width så att de inte växer för mycket */
+    max-width: 250px;
+    margin: 0 2%;
 }
-.prish1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align:center;
-    color: rgb(0, 0, 0);
+
+.priskolumn.populär {
+    /*få mitten boxen att poppa ut mer, dra ögat till den */
+    background-color: var(--main-accent-color);
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
 }
-#gridcontainerpriser{
+
+.pris-header {
+    /*för att enkelt centrera texten i toppen av boxen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.pris {
+    font-size: 3rem;
+    display: flex;
+    /*för att få SEK, prissiffran och /h på en rad */
+}
+
+.sek,
+.pertimme {
+    font-size: 1rem;
+    /*minska både SEK och /h */
+}
+
+.sek {
+    margin-right: 6px;
+    /*så den inte är för trångt bredvid priset */
+}
+
+.pertimme {
+    margin-top: 33px;
+    /*få /h under priset */
+}
+
+.package-namn {
+    padding-top: 20px;
+}
+
+.divider {
+    /*horisontell linje för att separera headern och innehållet */
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 2rem 0;
+}
+
+.pris-ikoner {
+    max-width: 18px;
+    margin-right: 0.8em;
+}
+
+.feature {
+    font-size: 1.25rem;
+    margin-top: 22px;
+}
+
+.feature.inaktiv {
+    color: rgb(117, 117, 117);
+    text-decoration-line: line-through;
+}
+
+.package-knapp {
+    border: none;
+    background-color: var(--main-accent-color);
+    width: 100%;
+    padding: 5%;
+    cursor: pointer;
+    /*Så att knappen ser mer klickbar ut när man hoverar över den */
+    margin-top: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: large;
+    transition: 200ms;
+    /*När knappen poppar ut gör den det lite saktare */
+}
+
+.package-knapp.populär {
+    background-color: rgb(0, 0, 0);
+    color: var(--main-accent-color);
+}
+
+.package-knapp:hover,
+.package-knapp:focus {
+    transform: scale(1.1);
+    /*Knappen förstoras med 10% när man hoverar över den, alltså poppar ut */
+}
+#pris-form-container{
+    color: aliceblue;
     display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    column-gap: 2%;
-    min-height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 80px);
+    background-color: rgba(0, 0, 0, .8);
+    max-width: 80%;
+    margin: 0 auto;
 }
-#package1, 
-#package2,
-#package3{
-    box-shadow: 1px 1px 20px;
-    background-color:rgb(255, 255, 255);
-    border: 2px solid black;
-
+#form-divider{
+    width: 80%;
+    height: 1px;
+    border: 1px solid black;
+    background-color: black;
+    opacity: 0.8;
 }
-#package1{
-    grid-column: 2 / 5;
-}
-#package2{
-    grid-column: 6 / 9;
-}
-#package3{
-    grid-column: 10 / 13;
-}
-.priserlista{
-    color: rgb(0, 0, 0);
-    margin-top: 10%;
-}
-#prislista1,#prislista2,#prislista3{
-    display: inline-block;
-    margin-left: 12.5%;    
-}
-#prislista2{
-    margin-left: 21%;
-}
-#prislista3{
-    margin-left: 20%;
-}
-
-/*Freddes grejer */
 
 
 
+#pris-form{
+    padding-top: 3%;
+    padding-right: 5%;
+    grid-column: 3 /5;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
 
-img{
+    min-height: 250px;
+    min-width: 200px;
+}
+input[type=mail],input[type=name]{
+    height: 30px;
     width: 100%;
-    height: 100vh;
+    border: none;
+    border-bottom:2px solid var(--main-accent-color);
+    grid-row: 2/3;
+    background-color: transparent
+}
+input[type=mail]{
+    width: 90%;
+}
+label[for=name]{
+    grid-row: 1;
+    grid-column: 2 /3;
 }
 
-.container{
+label[for=mail]{
+    grid-row: 1;
+    grid-column: 1 /2;
+}
+#beskrivning{
+    grid-row: 3/5;
+    grid-column: 1 / 4;
+    border: none;
+    border-bottom:2px solid var(--main-accent-color);
+    background-color: transparent;
+    color:white;
+}
+#pris-h3, #pris-p{
+    padding: 6%;
+    grid-column: 1;
+}
+@media screen and (max-width: 620px){
+    #pris-h3, #pris-p{
+        grid-column: 1 / 3;
+    }
+    #pris-p{
+        grid-row: 3;
+    }
+}
+#pris-form-submit{
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+    height: 50%;
+    width: 50%;
+    font-weight: bold;
+    font-size: larger;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    margin-top: 2%;
+    background-color: var(--main-accent-color);
+}
+/* Fredrik */
+
+
+.index-container {
+    width: 100%;
     min-height: 100vh;
-    background-image: url(../img/trains-gb0318122a_1920.jpg);
+    background-image: url(../img/Kopia\ av\ high\ rises.JPG);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text-box {
+    width: 90%;
+    color: var(--main-accent-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    font-size: 36px;
+    background-color: black;
+    opacity: 0.7;
 }
 
 nav {
-    display: flex; 
+    display: flex;
     padding: 2% 6%;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
-.nav-links{
+.nav-links {
     flex: 1;
     text-align: right;
 }
 
-.nav-links > ul > li{
+.nav-links>ul>li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
@@ -105,12 +252,316 @@ nav {
     border: 1px solid white;
 }
 
-.nav-links > ul > li > a{
+.nav-links>ul>li>a {
     color: white;
     text-decoration: none;
 }
-.nav-links > ul > li:hover{
-    background: rgb(219, 219, 2);
+
+.nav-links>ul>li:hover {
+    background: var(--main-accent-color);
     transition: 1s;
 }
 
+.maincontainer2 {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.headline {
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.mainbox1,
+.mainbox2,
+.mainbox3 {
+    min-height: 200px;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+i.quote {
+    font-size: 20px;
+    color: var(--main-accent-color);
+}
+
+.indexcontent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex: 15 0 110px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.kund {
+    color: var(--main-accent-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.stars {
+    margin-top: 5px;
+    color: var(--main-accent-color);
+}
+
+.mainimage img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.mainbox1 {
+    grid-column: 1 / 1;
+}
+
+.mainbox2 {
+    grid-column: 2 / 2;
+}
+
+.mainbox3 {
+    grid-column: 3 / 3;
+}
+
+@media screen and (max-width: 811px){
+    .text-box{
+    transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mainbox1 {
+        grid-column: 1 / 4;
+    }
+
+    .mainbox2 {
+        grid-column: 1 / 4;
+    }
+
+    .mainbox3 {
+        grid-column: 1 / 4;
+    }
+
+    .mainbox1 {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    nav {
+        padding: 2px;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+}
+
+/* Liza */
+
+.om-oss {
+    text-align: center;
+    font-size: 30px;
+    color: var(--main-accent-color);
+
+
+}
+
+
+
+.om-oss-main {
+    display: flex;
+    flex-flow: row;
+    width: 60%;
+    padding: 40px;
+    margin: auto;
+    gap: 5%;
+}
+
+.om-oss-main h2 {
+    color: var(--main-accent-color);
+}
+
+.om-oss-content {
+    display: grid;
+    grid-template-columns: 0% 25% 25% 0%;
+    margin: 20px;
+    column-gap: 10%;
+    justify-content: center;
+
+}
+
+.om-oss-content h2 {
+    color: var(--main-accent-color);
+}
+
+.om-oss-item1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row: 1 / span 1;
+    padding: 20px;
+
+}
+
+
+.om-oss-item2 {
+
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row: 1 / span 1;
+    padding: 20px;
+
+
+}
+
+.om-oss-footer {
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-style: bold;
+    margin: 30px;
+    color: var(--main-accent-color);
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .om-oss-main {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+
+    }
+
+    .om-oss-content {
+        grid-template-columns: auto;
+
+
+    }
+
+    .om-oss-item1 {
+        grid-row: 1 /span 1;
+        grid-column: 3;
+
+    }
+
+    .om-oss-item2 {
+        grid-row: 2 / span 1;
+        grid-column: 3;
+
+
+    }
+
+    .om-oss-footer {
+        display: grid;
+    }
+
+
+
+}
+
+/* css by Dipti */
+/* color and background color */
+.gold {
+    color: #e9bc27;
+}
+.bg-gold{
+background-color: #e9bc27;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+/* font size only used for contact page, gallerypage and footer part*/
+.heading-one {
+    font-size: 60px;
+    font-weight: bold;
+}
+.heading-two {
+    font-size: 48px;
+}
+.heading-three {
+    font-size: 36px;
+}
+
+/* css for contact page */
+.contact-page {
+    background-color: black;
+    text-align: center;
+}
+
+
+.contact-main-part{
+    background-color: #ffffff;
+    margin-top: 35px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+iframe {
+    margin: 20px;
+}
+
+.contact-main-part p {
+    font-size: 20px;
+}
+.contact-us-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contact-us-right h3{
+   
+   margin-bottom: 55px;
+   
+   text-align: center;
+}
+.form-group {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   text-align: left;
+   margin-bottom: 8px;
+   width: 350px;
+   
+}
+.text-muted:before {
+    content:"*"; 
+    font-size: 15px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-form-btn {
+border-color: #e9bc27;
+width: 100px;
+height: 40px;
+font-weight: bold;
+border-radius: 5px;
+text-align: center;
+}
+    
+
+.contact-form {
+margin: auto;
+
+}
+   
