@@ -769,6 +769,10 @@ footer {
     .contact-us-left h2 {
         font-size: 36px;
     }
+    .contact-us-right h3 {
+        font-size: 28px;
+        margin-left: 148px;
+    }
 }
 
 
@@ -835,8 +839,13 @@ footer {
     .contact-us-right .contact-form {
         margin: auto 10px;
     }
-
-
+    .form-group {
+        width: 300px;
+        margin-left: 25px;
+    }
+    .contact-form-btn {
+        margin-left: 25px;
+    }
     /* footer two column */
     .footer-container {
         display: grid;
