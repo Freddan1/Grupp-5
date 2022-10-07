@@ -19,6 +19,7 @@
     min-width: 100%;
     min-height: 80vh;
 
+
 }
 
 .priskolumn {
@@ -195,7 +196,17 @@ label[for=mail] {
     grid-column: 1;
 }
 
+@media screen and (max-width: 1050px) {
+    .priskolumn.populär {
+        order: 1;
+    }
+}
+
 @media screen and (max-width: 620px) {
+
+    .priskolumn.populär {
+        order: 0;
+    }
 
     #pris-h3,
     #pris-p {
@@ -406,6 +417,14 @@ i.quote {
     gap: 5%;
 }
 
+.om-oss-main img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 5px;
+}
+
 .om-oss-main h2 {
     color: var(--main-accent-color);
 }
@@ -456,10 +475,16 @@ i.quote {
 @media screen and (max-width: 768px) {
 
     .om-oss-main {
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 2;
+        margin: 0px;
+        padding-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
+    }
+
+    .om-oss-main img {
+        width: 100%;
     }
 
     .om-oss-content {
@@ -470,13 +495,13 @@ i.quote {
 
     .om-oss-item1 {
         grid-row: 1 /span 1;
-        grid-column: 3;
+        grid-column: 2;
 
     }
 
     .om-oss-item2 {
         grid-row: 2 / span 1;
-        grid-column: 3;
+        grid-column: 2;
 
 
     }
