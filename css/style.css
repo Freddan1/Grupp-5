@@ -489,7 +489,10 @@ i.quote {
 
 }
 
-/* css by Dipti */
+
+
+
+/*** css by Dipti ***/
 /* color and background color */
 .gold {
     color: #e9bc27;
@@ -571,7 +574,9 @@ iframe {
     width: 350px;
 
 }
-
+.form-group span {
+    color: #f92605;
+}
 .text-muted:before {
     content: "*";
     font-size: 15px;
@@ -589,7 +594,8 @@ iframe {
     font-weight: bold;
     border-radius: 5px;
     text-align: center;
-    text-transform: uppercase
+    text-transform: uppercase;
+    display: block;
 }
 
 .contact-form-btn:hover {
@@ -735,10 +741,134 @@ footer {
     position: relative;
     transition: .3s;
 }
+
 #category-1:checked~.gallery-title .category-1, 
 #category-2:checked~.gallery-title .category-2,
 #category-3:checked~.gallery-title .category-3,
 #category-4:checked~.gallery-title .category-4
 {
     color: #fff;
+}
+
+/*** media query css for contact us, gallery and footer by Dipti starts here: ***/
+
+/* media query css for contact us page*/
+
+
+/* screensize 1200px and 960px */
+@media only screen and (max-width: 1200px) and (min-width: 960px)  {
+    .gallary-main img {
+        width: 281px;
+    }
+    .gallery-title {
+        font-size: 32px;
+    }
+    .gallery-title label {
+        padding: 0px 8px;
+    }
+    .contact-us-left h2 {
+        font-size: 36px;
+    }
+}
+
+/* screensize 960px and 768px */
+@media only screen and (max-width: 960px) and (min-width: 768px)  {
+        .gallary-main img {
+            width: 220px;
+            height: 240px;
+        }
+    .gallery-title {
+        font-size: 28px;
+    }
+    .gallery-title label {
+        padding: 0px 5px;
+    }
+    .contact-us-left h2 {
+        font-size: 28px;
+    }
+    .contact-us_heading_text h1 {
+        font-size: 48px;
+        margin-top: 45px;
+    }
+    form.contact-form {
+        padding-left: 180px;
+        
+    }
+}
+/* for small screensize, max-width 768px or less */
+@media only screen and (max-width: 768px) {
+ 
+.contact-us_heading_text h1 {
+    
+        font-size: 36px;
+        margin-top: 35px;
+    }
+    .contact-us_heading_text p {
+        padding: 5px 20px;
+    }
+    .contact-main-part {
+        padding-left: 0px;
+    }
+    .contact-us-left h2 {
+        font-size: 32px;
+    }
+    iframe {
+        width: 320px;
+        height: 320px;
+        padding-top: 20px;
+    }
+    .contact-main-part {
+        
+        display: flex;
+        flex-direction: column;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    .contact-us-right h3{
+        font-size: 24px;
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .contact-us-right .contact-form {
+        margin: auto 10px;
+    }
+
+
+    /* footer two column */
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 22px;
+        column-gap: 20px;
+       
+    }
+    .four-col-footer h2 {
+        font-size: 20px;
+    }
+    .four-col-footer p {
+        font-size: 16px;
+    }
+    .footer-col-three, .footer-col-four {
+        margin-top: 25px;
+    }
+    .footer-col-two ul li {
+        padding: 8px;
+    }
+    .copyright-text {
+        margin-bottom: 10px;
+    }
+
+    /* for gallery page */
+    .gallery-heading-text p {
+        font-size: 20px;
+    }
+   
+    .gallery-title label {
+        display: inline-block;
+        width: 140px;
+        font-size: 18px;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
 }
