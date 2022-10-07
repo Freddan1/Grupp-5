@@ -574,9 +574,11 @@ iframe {
     width: 350px;
 
 }
+
 .form-group span {
     color: #f92605;
 }
+
 .text-muted:before {
     content: "*";
     font-size: 15px;
@@ -706,6 +708,7 @@ footer {
     color: #fff;
 
 }
+
 .gallery-radio-button {
     display: none;
 }
@@ -732,6 +735,7 @@ footer {
     position: absolute;
     transition: 0s;
 }
+
 #category-1:checked~.gallary-main .gallery-allphotos,
 #category-2:checked~.gallary-main .nature-pic,
 #category-3:checked~.gallary-main .bridal-pic,
@@ -742,11 +746,10 @@ footer {
     transition: .3s;
 }
 
-#category-1:checked~.gallery-title .category-1, 
+#category-1:checked~.gallery-title .category-1,
 #category-2:checked~.gallery-title .category-2,
 #category-3:checked~.gallery-title .category-3,
-#category-4:checked~.gallery-title .category-4
-{
+#category-4:checked~.gallery-title .category-4 {
     color: #fff;
 }
 
@@ -756,19 +759,23 @@ footer {
 
 
 /* for ipad pro screensize 1366px and 1024px */
-@media only screen and (max-width: 1366px) and (min-width: 1024px)  {
+@media only screen and (max-width: 1366px) and (min-width: 1024px) {
     .gallary-main img {
         width: 281px;
     }
+
     .gallery-title {
         font-size: 32px;
     }
+
     .gallery-title label {
         padding: 0px 8px;
     }
+
     .contact-us-left h2 {
         font-size: 36px;
     }
+
     .contact-us-right h3 {
         font-size: 28px;
         margin-left: 148px;
@@ -778,59 +785,71 @@ footer {
 
 
 /* screensize 960px and 768px */
-@media only screen and (max-width: 1024px) and (min-width: 768px)  {
-        .gallary-main img {
-            width: 170px;
-            height: 180px;
-        }
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .gallary-main img {
+        width: 170px;
+        height: 180px;
+    }
+
     .gallery-title {
         font-size: 28px;
     }
+
     .gallery-title label {
         padding: 0px 5px;
     }
+
     .contact-us-left h2 {
         font-size: 28px;
     }
+
     .contact-us_heading_text h1 {
         font-size: 48px;
         margin-top: 45px;
     }
+
     form.contact-form {
         padding-left: 180px;
-        
+
     }
 }
+
 /* for small screensize, max-width 768px or less */
 @media only screen and (max-width: 768px) {
- 
-.contact-us_heading_text h1 {
-    
+
+    .contact-us_heading_text h1 {
+
         font-size: 36px;
         margin-top: 35px;
     }
+
     .contact-us_heading_text p {
         padding: 5px 20px;
     }
+
     .contact-main-part {
         padding-left: 0px;
     }
+
     .contact-us-left h2 {
         font-size: 32px;
     }
+
     iframe {
         width: 320px;
         height: 320px;
         padding-top: 20px;
     }
+
     .contact-main-part {
-        
+
         display: flex;
         flex-direction: column;
         padding-left: auto;
         padding-right: auto;
     }
-    .contact-us-right h3{
+
+    .contact-us-right h3 {
         font-size: 24px;
         padding-top: 30px;
         margin-bottom: 20px;
@@ -839,33 +858,42 @@ footer {
     .contact-us-right .contact-form {
         margin: auto 10px;
     }
+
     .form-group {
         width: 300px;
         margin-left: 25px;
     }
+
     .contact-form-btn {
         margin-left: 25px;
     }
+
     /* footer two column */
     .footer-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 22px;
         column-gap: 20px;
-       
+
     }
+
     .four-col-footer h2 {
         font-size: 20px;
     }
+
     .four-col-footer p {
         font-size: 16px;
     }
-    .footer-col-three, .footer-col-four {
+
+    .footer-col-three,
+    .footer-col-four {
         margin-top: 25px;
     }
+
     .footer-col-two ul li {
         padding: 8px;
     }
+
     .copyright-text {
         margin-bottom: 10px;
     }
@@ -874,7 +902,7 @@ footer {
     .gallery-heading-text p {
         font-size: 20px;
     }
-   
+
     .gallery-title label {
         display: inline-block;
         width: 140px;
