@@ -19,6 +19,7 @@
     min-width: 100%;
     min-height: 80vh;
 
+
 }
 
 .priskolumn {
@@ -194,8 +195,17 @@ label[for=mail] {
     padding: 6%;
     grid-column: 1;
 }
+@media screen and (max-width: 1050px) {
+    .priskolumn.populär{
+        order: 1;
+    }
+}
 
 @media screen and (max-width: 620px) {
+    
+    .priskolumn.populär{
+        order: 0;
+    }
 
     #pris-h3,
     #pris-p {
