@@ -195,15 +195,16 @@ label[for=mail] {
     padding: 6%;
     grid-column: 1;
 }
+
 @media screen and (max-width: 1050px) {
-    .priskolumn.populär{
+    .priskolumn.populär {
         order: 1;
     }
 }
 
 @media screen and (max-width: 620px) {
-    
-    .priskolumn.populär{
+
+    .priskolumn.populär {
         order: 0;
     }
 
@@ -416,6 +417,14 @@ i.quote {
     gap: 5%;
 }
 
+.om-oss-main img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 5px;
+}
+
 .om-oss-main h2 {
     color: var(--main-accent-color);
 }
@@ -467,8 +476,8 @@ i.quote {
 
     .om-oss-main {
         display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 2;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
 
     }
 
@@ -480,13 +489,13 @@ i.quote {
 
     .om-oss-item1 {
         grid-row: 1 /span 1;
-        grid-column: 3;
+        grid-column: 2;
 
     }
 
     .om-oss-item2 {
         grid-row: 2 / span 1;
-        grid-column: 3;
+        grid-column: 2;
 
 
     }
@@ -710,6 +719,7 @@ footer {
     color: #fff;
 
 }
+
 .gallery-radio-button {
     display: none;
 }
@@ -736,6 +746,7 @@ footer {
     position: absolute;
     transition: 0s;
 }
+
 #category-1:checked~.gallary-main .gallery-allphotos,
 #category-2:checked~.gallary-main .nature-pic,
 #category-3:checked~.gallary-main .bridal-pic,
@@ -745,10 +756,10 @@ footer {
     position: relative;
     transition: .3s;
 }
-#category-1:checked~.gallery-title .category-1, 
+
+#category-1:checked~.gallery-title .category-1,
 #category-2:checked~.gallery-title .category-2,
 #category-3:checked~.gallery-title .category-3,
-#category-4:checked~.gallery-title .category-4
-{
+#category-4:checked~.gallery-title .category-4 {
     color: #fff;
 }
