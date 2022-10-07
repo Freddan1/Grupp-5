@@ -18,4 +18,7 @@ Att göra 28/09:
 3. Skapa mapp för mockups och sätt alla där inne, ladda upp till Github.
 
 prototype contact us: 
-https://www.figma.com/proto/aRjP88Nm5idj9vns12yxl5/Untitled?page-id=0%3A1&node-id=0%3A1&viewport=-780%2C-953%2C1&scaling=scale-down&starting-point-node-id=20%3A29
+https://www.figma.com/proto/aRjP88Nm5idj9vns12yxl5/Untitled?page-id=0%3A1&node-id=20%3A29&viewport=-446%2C-648%2C0.5&scaling=scale-down&starting-point-node-id=20%3A29
+
+prototype gallery page
+https://www.figma.com/file/aRjP88Nm5idj9vns12yxl5/Untitled?node-id=1%3A21
