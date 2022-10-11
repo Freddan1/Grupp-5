@@ -553,9 +553,9 @@ i.quote {
     text-transform: uppercase;
 }
 
-/* css for contact page */
+/* css for contact page - dipti*/
 .contact-page {
-    background-color: black;
+    background-color: #433d2af0;
     text-align: center;
 }
 
@@ -637,7 +637,7 @@ iframe {
 
 }
 
-/* footer css */
+/* footer css - dipti*/
 footer {
 
     background-color: #000;
@@ -684,7 +684,11 @@ footer {
     margin-bottom: 15px;
 }
 
-/* gallery page css here */
+/* gallery page css here - dipti*/
+.gallery-heading-text, 
+.contact-us_heading_text {
+    padding-top: 20px;
+}
 .gallary-main img {
     width: 300px;
     height: 300px;
@@ -778,6 +782,7 @@ footer {
     color: #fff;
 }
 
+
 /*** media query css for contact us, gallery and footer by Dipti starts here: ***/
 
 /* media query css for contact us page*/
@@ -838,6 +843,7 @@ footer {
 
     }
 }
+
 
 /* for small screensize, max-width 768px or less */
 @media only screen and (max-width: 768px) {
@@ -924,6 +930,7 @@ footer {
     }
 
     /* for gallery page */
+   
     .gallery-heading-text p {
         font-size: 20px;
     }
@@ -935,4 +942,18 @@ footer {
         padding: 0px;
         margin-bottom: 10px;
     }
+    /* css for main nav, logo */
+nav {
+    display: grid;
+    grid-column: auto;
+    grid-row-gap: 10px;
+   
+}
+.nav-links ul li {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.g5-logo {
+    text-align: center;
+}
 }
