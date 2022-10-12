@@ -957,3 +957,11 @@ nav {
     text-align: center;
 }
 }
+
+/*media quary ends */
+
+/* css for main nav, each nav items has defarent size, but it will look good when all nav items size will same */
+.nav-links ul li {
+    width: 110px;
+    text-align: center;
+}
